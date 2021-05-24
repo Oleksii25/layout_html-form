@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
     onsubmit="onSubmit()">
@@ -42,7 +41,8 @@
           id="age"
           value="12"
           required
-          max="100">
+          max="100"
+          min="12">
         </label>
         <label for="date">
           Full date of birth:
@@ -85,7 +85,7 @@
         <label for="cats">
           Do you love cats?
           <input type="radio" name="cats"
-          id="cats" checked>Yes
+          id="cats"> Yes
           <input type="radio" name="cats"
           id="cats1" >No
         </label>
@@ -101,12 +101,9 @@
           id="time">
         </label>
         <label for="cars">
-          What are you favorite brand of cars?
+          What are your favorite brand of cars?
           <select name="cars" id="cars"
           required multiple>
-            <option value="" disabled
-            selected>
-            </option>
             <option value="">BMW</option>
             <option value="">AUDI</option>
             <option value="">Lada</option>
@@ -115,11 +112,12 @@
         <label for="rating">
           How do you rate our work?
           <input type="range" name="work_rating"
-          id="rating" step="3">
+          id="rating" step="3"
+          value="0">
         </label>
       </fieldset>
       <fieldset class="add_info">
-        <legend>Additional information</legend>
+        <legend>Additional info:</legend>
         <label for="comm">
           Comments:
           <textarea name="comments"
