@@ -1,17 +1,17 @@
 /* styles go here */
-* {
+html {
   font-weight: 200;
 }
 
-label {
+.lab {
   display: block;
   margin-bottom: 10px;
 }
 
-label:last-child {
+.lab:last-child {
   margin: 0;
 }
 
-fieldset {
+.fiset {
   margin-bottom: 20px;
 }

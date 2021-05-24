@@ -17,18 +17,25 @@
       method="post"
       onsubmit="onSubmit()"
     >
-      <fieldset class="personal_info">
+      <fieldset class="fiset">
         <legend>Personal information</legend>
-        <label for="surname">
+        <label
+          for="surname"
+          class="lab"
+        >
           Surname:
           <input
             id="surname"
             type="text"
             name="surname"
             required
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
-        <label for="name">
+        <label
+          for="name"
+          class="lab"
+        >
           Name:
           <input
             type="text"
@@ -38,7 +45,10 @@
             autocomplete="off"
           >
         </label>
-        <label for="age">
+        <label
+          for="age"
+          class="lab"
+        >
           How old are you:
           <input
             class="zadolbalo"
@@ -51,7 +61,10 @@
             min="12"
           >
         </label>
-        <label for="date">
+        <label
+          for="date"
+          class="lab"
+        >
           Full date of birth:
           <input
             type="date"
@@ -62,18 +75,24 @@
             required
           >
         </label>
-        <label for="agreement">
+        <label
+          for="agreement"
+          class="lab"
+        >
           I accept the term of the agreement:
           <input
             type="checkbox"
             name="agreement"
             id="agreement"
-            >
+          >
         </label>
       </fieldset>
-      <fieldset class="registration">
+      <fieldset class="fiset">
         <legend>Registration</legend>
-        <label for="email" >
+        <label
+          for="email"
+          class="lab"
+        >
           E-mail:
           <input
             type="email"
@@ -83,7 +102,10 @@
             required
           >
         </label>
-        <label for="password">
+        <label
+          for="password"
+          class="lab"
+        >
           Password:
           <input
             type="password"
@@ -93,9 +115,12 @@
           >
         </label>
       </fieldset>
-      <fieldset class="about">
+      <fieldset class="fiset">
         <legend>An interesting fact about you!</legend>
-        <label for="cats">
+        <label
+          for="cats"
+          class="lab"
+        >
           Do you love cats?
           <input
             type="radio"
@@ -108,7 +133,10 @@
             id="cats1"
           >No
         </label>
-        <label for="colors">
+        <label
+          for="colors"
+          class="lab"
+        >
           What is your favorite color?
           <input
             type="color"
@@ -116,7 +144,10 @@
             id="colors"
           >
         </label>
-        <label for="time">
+        <label
+          for="time"
+          class="lab"
+        >
           What time do you go to bed?
           <input
             type="time"
@@ -124,7 +155,10 @@
             id="time"
           >
         </label>
-        <label for="cars">
+        <label
+          for="cars"
+          class="lab"
+        >
           What are your favorite brand of cars?
           <select
             name="cars"
@@ -137,7 +171,10 @@
             <option value="">Lada</option>
           </select>
         </label>
-        <label for="rating">
+        <label
+          for="rating"
+          class="lab"
+        >
           How do you rate our work?
           <input
             type="range"
@@ -148,19 +185,26 @@
           >
         </label>
       </fieldset>
-      <fieldset class="add_info">
+      <fieldset class="fiset">
         <legend>Additional info:</legend>
-        <label for="comm">
+        <label
+          for="comm"
+          class="lab"
+        >
           Comments:
           <textarea
             name="comments"
             id="comm"
             cols="15"
             rows="2"
-            maxlength="200">
+            maxlength="200"
+          >
           </textarea>
         </label>
-        <label for="recomm">
+        <label
+          for="recomm"
+          class="lab"
+        >
           Would you recommend us?
           <select
             name="recommendation"
@@ -175,7 +219,8 @@
       <button
         type="submit"
         name="submit"
-      >Submit
+      >
+        Submit
       </button>
     </form>
   </body>
