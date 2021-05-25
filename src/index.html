@@ -19,11 +19,13 @@
     >
       <fieldset class="fiset">
         <legend>Personal information</legend>
-        <label
-          for="surname"
-          class="lab"
-        >
-          Surname:
+        <div class="block">
+          <label
+            for="surname"
+            class="lab"
+          >
+            Surname:
+          </label>
           <input
             id="surname"
             type="text"
@@ -31,25 +33,29 @@
             required
             autocomplete="off"
           >
-        </label>
-        <label
-          for="name"
-          class="lab"
-        >
-          Name:
-          <input
-            type="text"
-            name="name"
-            required
-            id="name"
-            autocomplete="off"
+        </div>
+        <div class="block">
+          <label
+            for="name"
+            class="lab"
           >
-        </label>
-        <label
-          for="age"
-          class="lab"
-        >
-          How old are you:
+            Name:
+          </label>
+          <input
+              type="text"
+              name="name"
+              required
+              id="name"
+              autocomplete="off"
+          >
+        </div>
+        <div class="block">
+          <label
+            for="age"
+            class="lab"
+          >
+            How old are You:
+          </label>
           <input
             class="zadolbalo"
             type="number"
@@ -60,12 +66,14 @@
             max="100"
             min="12"
           >
-        </label>
-        <label
-          for="date"
-          class="lab"
-        >
-          Full date of birth:
+        </div>
+        <div class="block">
+          <label
+            for="date"
+            class="lab"
+          >
+            Full date of birth:
+          </label>
           <input
             type="date"
             name="date"
@@ -74,26 +82,30 @@
             max="2025-04-25"
             required
           >
-        </label>
-        <label
-          for="agreement"
-          class="lab"
-        >
-          I accept the term of the agreement:
+        </div>
+        <div class="block">
+          <label
+            for="agreement"
+            class="lab"
+          >
+            I accept the term of the agreement:
+          </label>
           <input
             type="checkbox"
             name="agreement"
             id="agreement"
           >
-        </label>
+        </div>
       </fieldset>
       <fieldset class="fiset">
         <legend>Registration</legend>
-        <label
-          for="email"
-          class="lab"
-        >
-          E-mail:
+        <div class="block">
+          <label
+            for="email"
+            class="lab"
+          >
+            E-mail:
+          </label>
           <input
             type="email"
             name="email"
@@ -101,27 +113,31 @@
             placeholder="email@example.com"
             required
           >
-        </label>
-        <label
-          for="password"
-          class="lab"
-        >
-          Password:
+        </div>
+        <div class="block">
+          <label
+            for="password"
+            class="lab"
+          >
+            Password:
+          </label>
           <input
             type="password"
             name="Password"
             id="password"
             minlength="5"
           >
-        </label>
+        </div>
       </fieldset>
       <fieldset class="fiset">
         <legend>An interesting fact about you!</legend>
-        <label
-          for="cats"
-          class="lab"
-        >
-          Do you love cats?
+        <div class="block">
+          <label
+            for="cats"
+            class="lab"
+          >
+            Do you love cats?
+          </label>
           <input
             type="radio"
             name="cats"
@@ -132,34 +148,40 @@
             name="cats"
             id="cats1"
           >No
-        </label>
-        <label
-          for="colors"
-          class="lab"
-        >
-          What is your favorite color?
+        </div>
+        <div class="block">
+          <label
+            for="colors"
+            class="lab"
+          >
+            What is your favorite color?
+          </label>
           <input
             type="color"
             name="colors"
             id="colors"
           >
-        </label>
-        <label
-          for="time"
-          class="lab"
-        >
-          What time do you go to bed?
+        </div>
+        <div class="block">
+          <label
+            for="time"
+            class="lab"
+          >
+            What time do you go to bed?
+          </label>
           <input
             type="time"
             name="sleep_time"
             id="time"
           >
-        </label>
-        <label
-          for="cars"
-          class="lab"
-        >
-          What are your favorite brand of cars?
+        </div>
+        <div class="block">
+          <label
+            for="cars"
+            class="lab"
+          >
+            What are your favorite brand of cars?
+          </label>
           <select
             name="cars"
             id="cars"
@@ -170,12 +192,14 @@
             <option value="">AUDI</option>
             <option value="">Lada</option>
           </select>
-        </label>
-        <label
-          for="rating"
-          class="lab"
-        >
-          How do you rate our work?
+        </div>
+        <div class="block">
+          <label
+            for="rating"
+            class="lab"
+          >
+            How do you rate our work?
+          </label>
           <input
             type="range"
             name="work_rating"
@@ -183,15 +207,17 @@
             step="3"
             value="0"
           >
-        </label>
+        </div>
       </fieldset>
       <fieldset class="fiset">
         <legend>Additional info:</legend>
-        <label
-          for="comm"
-          class="lab"
-        >
-          Comments:
+        <div class="block">
+          <label
+            for="comm"
+            class="lab"
+          >
+            Comments:
+          </label>
           <textarea
             name="comments"
             id="comm"
@@ -200,12 +226,14 @@
             maxlength="200"
           >
           </textarea>
-        </label>
-        <label
-          for="recomm"
-          class="lab"
-        >
-          Would you recommend us?
+        </div>
+        <div class="block">
+          <label
+            for="recomm"
+            class="lab"
+          >
+            Would you recommend us?
+          </label>
           <select
             name="recommendation"
             id="recomm"
@@ -213,8 +241,7 @@
             <option value="">Yes</option>
             <option value="">No</option>
           </select>
-        </label>
-
+        </div>
       </fieldset>
       <button
         type="submit"

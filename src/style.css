@@ -3,12 +3,11 @@ html {
   font-weight: 200;
 }
 
-.lab {
-  display: block;
+.block {
   margin-bottom: 10px;
 }
 
-.lab:last-child {
+.block:last-child {
   margin: 0;
 }
 
